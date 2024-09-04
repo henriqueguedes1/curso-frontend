@@ -12,9 +12,10 @@ body {
 }
 
 header {
-    background: url(../imagens/mont.PNG) no-repeat;
+    background: url(../html/imagens/mont.PNG) no-repeat;
     border-bottom: 1px solid #000;
     position: sticky;
+    background-color: aquamarine;
 }
 
 h1 {
