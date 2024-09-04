@@ -1,0 +1,116 @@
+@import 'tabelas.css';
+
+
+/*
+	
+	Herança
+
+		1 Sobreposição: sobscreve o que foi escrito 
+		por ultimo
+		2 aplica a ultima regra
+		3 Prioriza estilo especificas
+*/
+
+
+html {
+	font-family: sans-serif;
+}
+
+
+/*
+	COmbinadores
+	tag filha >
+	tag irmã + (adjacente)
+	tag irmâ ~ (geral)
+	pseudo classes
+
+	seletor descendente (espaço)
+
+*/
+
+header h2 {
+	font-weight: 100;
+}
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+	background: #ff0;
+
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+h2 ~ h5 {
+	font-size: 1.2rem;
+}
+
+
+/*Pseudo-elementos*/
+
+a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+a:hover {
+	color: #ccc;
+	text-decoration: underline;
+}
+
+a:visited {
+	background: #ccc;
+}
+
+
+/*
+
+	Tipografia 
+
+*/
+
+html {
+	font-family: times new roman;
+}
+
+h1, h2, h3, h5 { 
+	
+	font-weight: bold;
+
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+li {
+	letter-spacing: .01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+/*
+	Cores 
+*/
+
+
+
+p {
+	color: black;
+}
+
+
+.navegacao {
+	background-color: rgba(0, 0, 0, .5);
+}
+
+footer {
+	background-color: #ccc;
+	padding-bottom: 1rem;
+}

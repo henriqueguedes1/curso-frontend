@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+	font-size: 62,5%; /*equivale a 10px*/
+	font-family: serif;
+
+}
+
+body {
+	background-color: white;
+	
+
+}
+
+/* Style the header */
+header {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  background: #f1f1f1;
+  }
+
+
+section h2 {
+	text-align: left;
+	margin-bottom: 10px;
+
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+nav li {
+	padding: 10px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #fff;
+}
+
+form div {
+	margin: 10px 10px 20px 10px;
+	padding: 10px 10px 10px 20px;
+	border-bottom: 1px solid #999;
+	background: #f1f1f1;
+
+}
+
+[type="text"], textarea {
+	padding: 10px;
+	display: block; 
+	width: 100%;
+}
+
+label {
+	padding: 10px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #66f;
+	display: block;
+}
+
+/* Clear floats after the columns */
+section::after {
+  background: #ccc;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+ 	font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*
+top (cima)
+rigth (direita)
+bottom (baixo)
+left (esquerda)
+*/
+
+

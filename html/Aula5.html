@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+	<head>
+		<title>Exercicio</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" coment="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	</head>
+	<body>
+		<header>
+			<h2>Cardápio Mont Doces</h2>
+		</header>
+
+		<section>
+			<h2>Preencha seus dados para receber nosso cardápio!</h2>
+			
+			<nav>
+				<ul>
+					<li><a href="./Aula4.html">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+				<h1>Contato</h1>
+				<p>Preencha os campos abaixo</p>
+				
+				<form method="post">
+					
+					<div>
+						<label for="nome">Nome</label> 
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome"> 
+					</div>
+
+					<div>	
+						<label for="email">E-mail</label> 
+						<input type="text" name="email" id="email" placeholder="E-mail">
+					</div>
+
+					<div>	
+						<label for="mensagem">Mensagem</label>
+						<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+					</div>
+
+					<div>
+						<p>
+							<label>Quais linguagens você prefere</label>
+							<input type="radio" name="linguagens" value="html">HTML
+							<input type="radio" name="linguagens" value="css">CSS
+							<input type="radio" name="linguagens" value="javascript">JavaScript
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>Quais linguagens você sabe</label>
+							<input type="checkbox" name="linguagens" value="html">HTML
+							<input type="checkbox" name="linguagens" value="css">CSS
+							<input type="checkbox" name="linguagens" value="javascript">JavaScript
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>Qual a sua cor favorita?</label>
+							<select>
+								<option value="azul" selected>Azul</option>
+								<option value="rosa">Rosa</option>
+								<option value="verde">Verde</option>
+							</select>
+						</p>
+					</div>
+
+
+					<div class="send">
+						<input type="submit">
+					</div>
+
+				</form>
+
+			
+			</article>
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Henrique</p>
+		</footer>
+
+	</body>
+</html>

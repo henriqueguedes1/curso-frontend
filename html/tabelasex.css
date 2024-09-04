@@ -1,0 +1,44 @@
+article {
+	width: 100%;
+}
+
+table {
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: #FFF;
+}
+
+table tr {
+	height: 1.5rem;	
+	vertical-align: bottom;
+}
+
+table tr, table td {
+	border: 1px solid #B5DED9;
+}
+
+table th {
+	border-right: 1px solid #B5DED9;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #D4DADC;
+}
+
+table thead {
+	background-color: #235689;
+	color: #fff;
+}
+
+td, th {
+	vertical-align: middle;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.result {
+	font-weight: bold;
+}

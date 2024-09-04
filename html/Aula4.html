@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+	<head>
+		<title>Aula 4</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" coment="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>	
+	</head>
+	<body>
+		<header>
+			<h2>Título da página</h2>
+		</header>
+
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#inicio">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="./Aula5.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+				<h1>Título artigo </h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque bibendum dignissim est, vel aliquet mi faucibus at. Duis vehicula massa ac ultrices sagittis. Phasellus non urna tristique, sagittis tortor in, fringilla lectus. Maecenas quis nisl pharetra, aliquam arcu ut, accumsan tortor. Sed malesuada, elit eu varius posuere, odio elit pellentesque leo, vitae malesuada sem purus sit amet turpis. Aenean lorem nunc, euismod id interdum vel, volutpat vitae nisl. Fusce vehicula mollis turpis eget laoreet. Integer sed sagittis tellus. Etiam dui justo, sollicitudin id tristique sed, imperdiet ut elit. Fusce fermentum risus nec posuere gravida. Aliquam tristique facilisis tempor. Maecenas augue risus, aliquam in mi vitae, semper pharetra odio. In rhoncus condimentum lobortis. Aliquam justo nibh, malesuada id sapien vel, ultricies faucibus mauris. Phasellus vel dictum enim.</p>
+
+				<p>Donec fringilla nulla id vehicula luctus. Nulla fringilla egestas rutrum. Curabitur vel felis pulvinar lacus mollis volutpat id sit amet nulla. Aenean pretium erat metus, et laoreet magna tristique et. Suspendisse libero augue, gravida a molestie vitae, suscipit sed dolor. Pellentesque nec vehicula neque, vel bibendum velit. Nunc facilisis tempus feugiat. Aenean pharetra diam dictum interdum dictum.</p>
+
+			
+			</article>
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Henrique</p>
+		</footer>
+
+	</body>
+</html>

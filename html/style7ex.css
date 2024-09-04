@@ -1,0 +1,18 @@
+@import 'tabelasex.css';
+
+
+/*
+	
+	Herança
+
+		1 Sobreposição: sobscreve o que foi escrito 
+		por ultimo
+		2 aplica a ultima regra
+		3 Prioriza estilo especificas
+*/
+
+
+footer {
+	background-color: #e5e5e5;
+	padding-bottom: 1rem;
+}

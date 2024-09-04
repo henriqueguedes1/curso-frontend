@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgba(218, 245, 245, 0.5);
+}
+
+header {
+    background: url(../imagens/mont.PNG) no-repeat;
+    border-bottom: 1px solid #000;
+    position: sticky;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 64px;
+    padding-top: 64px;
+}
+
+nav {
+    float: left;
+    width: 20%;
+    height: 50vh;
+    padding-top: 15px;
+}
+
+nav div a {
+    padding-left: 20px;
+    line-height: 2;
+    text-decoration: none;
+}
+
+nav div a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+article {
+    float: left;
+    width: 80%;
+}
+
+div h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 20px;
+}
+
+div p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px;
+}
+
+div ul {
+    font-size: 1.2rem;
+}
+
+div ul li {
+    line-height: 1.5;
+}
+
+.botao  {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 100%lay;
+}
+
+.endereco {
+    text-decoration: none;
+    color: #000;
+    padding: 12px;
+    font-size: 1.5rem;
+}
+
+.fotoend {
+    display: block;
+    margin: 0 auto;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: aqua;
+    font-weight: bold;
+}
+
+.qs {
+    font-weight: normal;
+}
+
+.imagem {
+    width: 400px;
+}
+
+
+/*  Filtros */
+
+#filtro-id {
+    filter: drop-shadow(8px 8px 10px #333); /*o primeiro parametro controla o eixo vertical, o segundo o eixo horizontal o terceiro da expanção da sombra*/
+    padding: 30px;
+}
+
+.filtro {
+    filter: grayscale(100%); /* Escala de cinza */
+    filter: brightness(50%); /* Brilho 100% = normal*/
+    filter: opacity(50%); /*Transparencia*/
+    filter: saturate(100%); /*Saturação das cores*/
+    filter: sepia(80%); /*imagem fica dourada, envelhecida*/
+    filter: blur(5px); /* Desfoque*/
+    filter: invert(100%); /* Inverter as cores*/
+    filter: saturate(200%) sepia(100%); /*Combina os filtros separados por espaço*/
+}
+
+.filtro:hover {
+    filter: grayscale(0%);
+
+}
+
+.coluna {
+
+
+    width: 50%;
+    float: left;
+    padding: 10px;
+    /*background-color: #fff;
+    border: 1px solid #000;*/
+}
+
+.coluna-3 {
+    columns: 100px 3;
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+/*Mobile Frist*/
+
+/*Tablet*/
+@media (max-width: 768px) { /*quando a resolução de tela for inferior ou igual a esse limite, ele vai atender as regras específicas aqui dentro*/
+    nav {
+        width: 30%;
+    }
+    article {
+        width: 70%;
+    }
+    .coluna {
+    width: 50%;
+    min-width: unset;
+    }
+}
+
+/*Smartphone*/
+@media (max-width: 425px) { /*quando a resolução de tela for inferior ou igual a esse limite, ele vai atender as regras específicas aqui dentro*/
+    nav,
+    article,
+    .coluna {
+    width: 100%;
+    min-width: 320px;
+    }
+}
